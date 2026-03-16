@@ -1,0 +1,133 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Restaurant Menu Bliss</title>
+        <style>
+                    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        }
+
+        .container {
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        }
+
+        img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        }
+
+        h1 {
+        margin-bottom: 10px;
+        }
+
+        .about {
+        margin-bottom: 30px;
+        line-height: 1.5;
+        }
+
+        .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        }
+
+        .link-button {
+        background-color: rgb(143, 174, 233);
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 8px;
+        display: block;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Restaurant Bliss</h1>
+            <img id="header-img" src="header-img.jpg">
+            <nav>
+                <h1>#menu</h1>
+                <h1>#order-form</h1>   
+            </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <article>
+                    <h3>Thea</h3>
+                    <img src="thea.jpeg">
+                    <p>Our thea is a blend of the finest leaves on the country. It had mint, oolong and citrus. The price is <i>6 euro</i></p>
+                </article>
+                <article>
+                    <h3>Apple pie</h3>
+                    <img src="apple pie.jpeg">
+                    <p>Our apple pie is made with fresh apples and a secret blend of spices. The price is <i>4 euro</i></p>
+                </article>
+                <article>
+                    <h3>Ice cream</h3>
+                    <img src="ice-cream.jpeg">
+                    <p>Our ice cream is made with the finest ingredients and comes in a variety of flavors. The price is <i>3 euro</i></p>
+            </section>
+            <br><br>
+            <section>
+                <h2>Place Your Order</h2>
+                <form>
+                    Thea<input type ="number" min="0">
+                    <br>
+                    <input type="radio" name="thea">cold</input>
+                    <br>
+                    <input type="radio" name="thea">hot</input>
+                    <br>
+                    <input type="radio" name="thea">without lemon</input>
+                    <br><br>
+                    Apple pie<input type ="number" min="0">
+                    <br>
+                    <input type="radio" name="apple-pie">with ice cream</input>
+                    <br>
+                    <input type="radio" name="apple-pie">with chocolate sauce</input>
+                    <br>
+                    <input type="radio" name="apple-pie">without anything</input>
+                    <br><br>
+                    Ice cream<input type ="number" min="0">
+                    <br>
+                    <input type="radio" name="ice-cream">vanilla</input>
+                    <br>
+                    <input type="radio" name="ice-cream">chocolate</input>
+                    <br>
+                    <input type="radio" name="ice-cream">strawberry</input>
+                    <br><br>
+                    <input type="radio" name="ice-cream">with sprinkles</input>
+                    <br>
+                    <input type="radio" name="ice-cream">Chocolate</input>
+                    <br>
+                    <input type="radio" name="ice-cream">Marsmello</input>
+                    <br>
+                    <textarea placeholder="Special Requests"></textarea>
+                    <br><br>
+                    <label for="checkout">Go To Checkout</label>
+                    <br>
+                    <input type="submit" value="Go To Checkout"></input>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by SakuraYuri</p>
+        </footer>
+    </body>
+</html>
